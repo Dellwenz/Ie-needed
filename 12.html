@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="login">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <label>Username</label>
+        <input type="text" name="username" required>
+        <label>Password</label>
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+      <script>
+         function auth(){
+            var username=document.getElementById('username').value;
+            var password=document.getElementById('password').value;
+            if(Username=="AdminQCU1234"&& Password=="QCU123"){
+                window.location.assign("Profile.html");
+                alert("Login Sucesfully");
+            }
+            else{
+                alert("Invalid Information");
+                return;
+            }
+
+
+
+        }
+      </script>
+    </div>
+  </body>
+</html>
